@@ -1,0 +1,109 @@
+.system {
+    color: rgba(#272727, 0.9);
+    width: 1366px;
+    margin: 0 auto;
+    .container {
+        width: 100%;
+    }
+    &__inner {
+        display: flex;
+    }
+    &__inner {
+        padding-left: 130px;
+        display: flex;
+        align-items: center;
+    }
+    &__left {
+        margin-right: 30px;
+        flex-grow: 1;
+        // padding: 75px 0;
+    }
+    &__logo {
+        width: 242px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 175%;
+        margin-top: 28px;
+    }
+    &__slider {
+        width: 650px;
+        flex-shrink: 0;
+        margin-left: auto;
+        &-item {
+            background: #4E8ABE;
+        }
+        &-img {
+            img {
+                width: 100%;
+            }
+        }
+        &-desc {
+            padding: 48px 58px 100px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 175%;
+            color: #FFFFFF;
+            max-width: 510px;
+            strong {
+                font-weight: 700;
+            }
+        }
+    }
+    .swiper-pagination {
+        bottom: 61px;
+        left: 58px;
+        width: unset;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .swiper-pagination-bullet {
+        opacity: 1;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        margin: 0 12px;
+        border: 2px solid #B5DDFF;
+        box-shadow: 0px 4px 16px rgba(29, 104, 169, 0.7);
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        width: 22px;
+        height: 22px;
+        background: #D9272E;
+        box-shadow: none;
+        border: 3px solid #fff;
+    }
+    &__items {
+        margin-top: 48px;
+    }
+    &__item {
+        display: flex;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 175%;
+        &:not(:last-child) {
+            margin-bottom: 65px;
+        }
+        &-icon {
+            flex-shrink: 0;
+            margin-right: 25px;
+            margin-top: 6px;
+            background: #F8F8F8;
+            border-radius: 11.7846px;
+            width: 92px;
+            height: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        span {
+            max-width: 312px;
+        }
+    }
+}

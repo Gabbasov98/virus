@@ -1,0 +1,47 @@
+input::placeholder,
+textarea::placeholder {
+  color: #9FA4BC; }
+
+input[type="date"] {
+  position: relative;
+  padding-right: 28px; }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+  opacity: 0; }
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+  z-index: 1; }
+
+input[type="date"]::before {
+  content: attr(data-placeholder);
+  width: 100%;
+  color: #5e6162; }
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  display: none; }
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; }
+
+.btn-blue {
+  background: #0F33AD;
+  color: #FFFFFF; }
+  .btn-blue:hover {
+    color: #FFFFFF;
+    opacity: 0.8; }
+
+/*# sourceMappingURL=ux.css.map */

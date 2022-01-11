@@ -1,0 +1,181 @@
+.effect {
+    margin: 70px auto 0;
+    width: 1366px;
+    background: #F3F5F8;
+    backdrop-filter: blur(71.634px);
+    padding-top: 60px;
+    .container {
+        margin-right: 0;
+    }
+    &__inner {
+        padding-left: 180px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 50px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 130%;
+        color: #18214D;
+        font-family: $rubic;
+    }
+    &__bottom {
+        margin-top: 50px;
+        display: flex;
+    }
+    &__items {
+        padding-right: 30px;
+        height: 450px;
+        width: 330px;
+        overflow-y: auto;
+        flex-shrink: 0;
+    }
+    &__item {
+        background: rgba(#FFFFFF, 0.5);
+        border: 0.498264px solid rgba(56, 78, 112, 0.12);
+        backdrop-filter: blur(32.0104px);
+        display: flex;
+        align-items: center;
+        padding: 0 23px;
+        height: 80px;
+        font-size: 20px;
+        line-height: 130%;
+        color: #5C6077;
+        font-family: $rubic;
+        border-radius: 11.0381px;
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+        i {
+            background: #F3F5F8;
+            border-radius: 9.96528px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 25px;
+        }
+    }
+    &__slider {
+        flex-grow: 1;
+        margin-left: 40px;
+        width: calc(100% - 400px);
+        padding-bottom: 55px;
+        &-item {
+            background: #FFFFFF;
+            border: 0.446813px solid rgba(56, 78, 112, 0.12);
+            backdrop-filter: blur(28.705px);
+            border-radius: 9.89827px;
+            padding: 25px 33px;
+            height: 420px;
+            transition: all .3s;
+            &:hover {
+                background: #233E99;
+                border: 0.446813px solid rgba(56, 78, 112, 0.12);
+                .effect__slider-title,
+                .effect__slider-desc,
+                .effect__slider-price-old,
+                .effect__slider-price-new {
+                    color: #fff;
+                }
+                .effect__slider-link {
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+        &-img {
+            height: 180px;
+            text-align: center;
+            img {
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 130%;
+            color: #18214D;
+            margin-top: 20px;
+            font-family: $rubic;
+        }
+        &-desc {
+            font-size: 12px;
+            line-height: 170%;
+            color: #5C6077;
+            margin-top: 15px;
+            padding-right: 20px;
+        }
+        &-price {
+            &-old {
+                font-size: 12px;
+                line-height: 130%;
+                text-decoration-line: line-through;
+                color: #5C6077;
+                margin-top: 28px;
+                font-family: $rubic;
+            }
+            &-new {
+                font-weight: 500;
+                font-size: 22.0183px;
+                line-height: 130%;
+                color: #233E99;
+                font-family: $rubic;
+            }
+        }
+        &-bottom {
+            margin-top: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-nav {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        &-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #233E99;
+            border-radius: 81.4367px;
+            width: 110px;
+            height: 44px;
+            padding: 0 10px;
+            flex-shrink: 0;
+        }
+    }
+    .swiper-pagination {
+        position: static;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 175%;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        margin-right: 25px;
+    }
+    .swiper-pagination-current {
+        color: #233E99;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        opacity: 1;
+        position: static;
+        margin: 0;
+        padding: 0 7px;
+        &:after {
+            display: none;
+        }
+    }
+    .swiper-button-prev {
+        margin-right: 10px;
+    }
+}

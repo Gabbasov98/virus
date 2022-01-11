@@ -1,0 +1,59 @@
+.eko {
+    margin: 70px auto 0;
+    width: 1366px;
+    &__inner {
+        padding-left: 260px;
+    }
+    &__top {
+        background-image: url(../img/switch.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: left bottom;
+        background-color: #F0F9FF;
+        box-shadow: 0px 11.8462px 20.3077px rgba(0, 0, 0, 0.03);
+        border-radius: 33.8462px;
+        min-height: 505px;
+        padding: 67px 62px;
+        max-width: 1020px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 120%;
+        color: #1D3174;
+        font-family: $rubic;
+    }
+    &__desc {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 175%;
+        color: #272727;
+        margin-top: 25px;
+        max-width: 860px;
+    }
+    &__items {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        max-width: 1020px;
+    }
+    &__item {
+        border-radius: 25.3846px;
+        padding: 50px 80px 70px 26px;
+        &-title {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 125%;
+            color: #272727;
+            font-family: $rubic;
+        }
+        &-desc {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 165%;
+            color: #272727;
+            margin-top: 40px;
+        }
+    }
+}

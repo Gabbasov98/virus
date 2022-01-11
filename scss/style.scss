@@ -1,0 +1,41 @@
+@import 'reset';
+@import 'ux';
+@import 'main';
+@import 'slider';
+@import 'protect';
+@import 'info';
+@import 'reduce';
+@import 'lungs';
+@import 'footer';
+@import 'catalog';
+@import 'air';
+@import 'system';
+@import 'qa';
+@import 'eko';
+@import 'effect';
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1300px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+.container {
+    padding: 0;
+}

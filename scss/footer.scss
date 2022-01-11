@@ -1,0 +1,328 @@
+footer {
+    margin: 0px auto 0;
+    width: 1366px;
+    background: #2F2F2F;
+    padding: 59px 25px 64px 85px;
+}
+
+.footer {}
+
+.f_cols .cl,
+.f_cols .modal_content,
+.f_cols .f_bot,
+.f_cols .b1,
+.f_cols .b2,
+.f_cols .b3,
+.f_cols .b4,
+.f_cols .b5,
+.f_cols .b6,
+.f_cols .b7,
+.f_cols .b8,
+.f_cols .b9,
+.f_cols .b10,
+.f_cols .b11,
+.f_cols .b12,
+.f_cols .b13,
+.f_cols .b14,
+.f_cols .b15,
+.f_cols .b16,
+.f_cols .b17,
+.f_cols .header,
+.f_cols .h_tel_block,
+.f_cols .tabs_block,
+.f_cols .b9_items,
+.f_cols .footer,
+.f_cols .f_cols {
+    display: none;
+}
+
+.f_col {
+    width: 20%;
+    float: left;
+    padding-right: 15px;
+}
+
+.f_col:nth-child(5) {
+    padding-right: 0;
+}
+
+.f_list>li {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.f_list>li>a {
+    font: 15px/25px "Montserrat", Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.5385em;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.f_list_2>li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.f_list_2>li>a {
+    color: #999999;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 0.8em!important;
+    line-height: 1.5385em!important;
+    font: 15px/25px "Montserrat", Arial, sans-serif;
+}
+
+.f_list_2>li>a:hover {
+    color: #fff;
+}
+
+.f_sign {
+    max-width: 330px;
+    color: #fff;
+    transition: 0.3s;
+    position: relative;
+    display: block;
+    padding: 15px 45px 14px 18px;
+    white-space: normal;
+    background: #494949;
+    border-color: #494949;
+    text-align: left;
+    letter-spacing: 0.8px;
+    font-size: .7em!important;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0px;
+    border-radius: 3px;
+    font: 15px/25px "Montserrat", Arial, sans-serif;
+    line-height: 1.428571429;
+    margin-bottom: 10px;
+}
+
+.f_sign:hover {
+    filter: alpha(Opacity=70);
+    opacity: 0.7;
+}
+
+.f_sign:after {
+    display: block;
+    content: "";
+    width: 21px;
+    height: 16px;
+    background: url(../img/f_sign.png) 0 0 no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.fc_item {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 17px;
+    color: #fff;
+    padding-left: 20px;
+    position: relative;
+    font: 15px/25px "Montserrat", Arial, sans-serif;
+}
+
+.f_tel {
+    padding: 0 10px 0 23px;
+}
+
+.f_tel:before {
+    display: block;
+    content: "";
+    width: 5px;
+    height: 10px;
+    background: url(../img/f_tel.png) 0 0 no-repeat;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.f_tel:after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px 2.5px 0 2.5px;
+    border-color: #ffffff transparent transparent transparent;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.f_mail:before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 8px;
+    background: url(../img/f_mail.png) 0 0 no-repeat;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.f_address:before {
+    display: block;
+    content: "";
+    width: 9px;
+    height: 11px;
+    background: url(../img/f_address.png) 0 0 no-repeat;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.f_socials {
+    text-align: center;
+    position: relative;
+    margin: 50px 0 30px;
+}
+
+.f_socials:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #3F3F3F;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.fs_list {
+    display: inline-block;
+    text-align: center;
+    background: #2F2F2F;
+    padding: 0 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.fs_list>li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border: 1px solid #3F3F3F;
+}
+
+.fs_list>li>a {
+    display: block;
+    width: 38px;
+    height: 38px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.fs_list>li>a:hover {
+    filter: alpha(Opacity=70);
+    opacity: 0.7;
+}
+
+.fs_list>li>a>span {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url(../img/socials_pay_sprite.png) 0 0 no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.fs_list>li:nth-child(2) span {
+    background-position: -14px 0;
+}
+
+.fs_list>li:nth-child(3) span {
+    background-position: -28px 0;
+}
+
+.fs_list>li:nth-child(4) span {
+    background-position: -42px 0;
+}
+
+.fs_list>li:nth-child(5) span {
+    background-position: -56px 0;
+}
+
+.fs_list>li:nth-child(6) span {
+    background-position: -70px 0;
+}
+
+.fs_list>li:nth-child(7) span {
+    background-position: -84px 0;
+}
+
+.fs_list>li:nth-child(8) span {
+    background-position: -98px 0;
+}
+
+.f_copy {
+    float: left;
+    font-size: 13px;
+    line-height: 15px;
+    color: #999999;
+    padding-top: 3px;
+    font: 15px/25px "Montserrat", Arial, sans-serif;
+    font-size: .867em;
+    line-height: 1.692em;
+}
+
+.f_pay {
+    float: right;
+}
+
+.f_pay>li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.f_pay>li>span {
+    display: block;
+    width: 30px;
+    height: 20px;
+    background: url(../img/socials_pay_sprite.png) 0 -20px no-repeat;
+}
+
+.f_pay>li:nth-child(2)>span {
+    background-position: -30px -20px;
+}
+
+.f_pay>li:nth-child(3)>span {
+    background-position: -60px -20px;
+}
+
+.f_pay>li:nth-child(4)>span {
+    background-position: -90px -20px;
+}
+
+.f_pay>li:nth-child(5)>span {
+    background-position: -120px -20px;
+}
+
+.f_pay>li:nth-child(6)>span {
+    background-position: -150px -20px;
+}
+
+.f_pay>li:nth-child(7)>span {
+    background-position: -180px -20px;
+}
+
+.f_pay>li:nth-child(8)>span {
+    background-position: -210px -20px;
+}
