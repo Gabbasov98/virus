@@ -7,7 +7,7 @@
     &__title {
         max-width: 360px;
         font-weight: bold;
-        font-size: 52px;
+        font-size: 48px;
         line-height: 120%;
         color: #1D3174;
         font-family: $rubic;
@@ -15,7 +15,7 @@
     }
     &__desc {
         max-width: 435px;
-        font-size: 23.8934px;
+        font-size: 22px;
         line-height: 160%;
         color: #1D3174;
         font-family: $rubic;
@@ -27,7 +27,7 @@
             top: 0;
             left: 0 !important;
             width: 100% !important;
-            background: transparent;
+            background: #F1F4FF;
         }
         .swiper-scrollbar-drag {
             background: #0F33AD;
@@ -73,6 +73,11 @@
             line-height: 130%;
             color: #170D84;
             font-family: $rubic;
+        }
+    }
+    &__slide1 {
+        .slider__slide-left {
+            align-items: flex-end;
         }
     }
     &__items {
@@ -172,14 +177,15 @@
     .slider {
         padding-top: 15px;
         &__top {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
         &__slider {
             margin-top: 15px;
         }
         &__slide {
-            padding-left: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 }
@@ -187,10 +193,11 @@
 @media screen and (max-width: 768px) {
     .slider {
         &__title {
-            font-size: 25px;
+            font-size: 30px;
         }
         &__desc {
-            font-size: 16px;
+            font-size: 14px;
+            margin-top: 11px;
         }
         &__slide {
             &-left {
@@ -223,25 +230,90 @@
 
 @media screen and (max-width: 640px) {
     .slider {
+        &__slide1 {
+            .slider__slide-left {
+                background: #B8F0D9;
+            }
+            .slider__link {
+                color: #0DBA71;
+            }
+        }
+        &__slide2 {
+            .slider__slide-left {
+                background: #B8DCF0;
+            }
+            .slider__link {
+                color: #51AAED;
+            }
+        }
+        &__slide3 {
+            .slider__slide-left {
+                background: #D4C9FD;
+            }
+            .slider__link {
+                color: #D4C9FD;
+            }
+        }
         &__slide {
-            display: block;
-            padding-top: 20px;
+            flex-wrap: wrap;
+            background: transparent !important;
+            position: relative;
             &:before {
                 display: none;
             }
             &-left {
-                margin: 20px auto 0;
-                height: 260px;
+                margin: 0 0 0 -15px;
+                height: 220px;
+                width: calc(100% + 30px);
+                justify-content: center;
+                align-items: flex-end;
                 img {
-                    max-height: 100%;
-                    max-width: 100%;
+                    max-height: 160px;
+                    width: auto;
                 }
             }
             &-right {
                 margin-left: auto;
                 margin-right: auto;
-                padding: 10px 0 20px;
+                padding: 10px 5px 50px;
+                position: static;
+                width: 100%;
+                max-width: unset;
             }
+            &-title {
+                font-size: 24px;
+                position: absolute;
+                top: 15px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                br {
+                    display: none;
+                }
+            }
+        }
+        &__item {
+            align-items: flex-start;
+            i {
+                margin-top: 3px;
+                width: 35px;
+                height: 35px;
+                border-radius: 10.0247px;
+                margin-right: 20px;
+                box-shadow: 0px 7.01726px 11.5284px rgba(177, 177, 177, 0.36) !important;
+                svg {
+                    max-width: 17px;
+                    height: auto;
+                }
+            }
+        }
+        &__link {
+            margin-top: 35px;
+            font-weight: 700;
+            text-decoration: none;
         }
     }
 }

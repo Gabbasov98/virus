@@ -98,30 +98,44 @@
 @media screen and (max-width: 992px) {
     .eko {
         &__inner {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
     .eko {
+        &__inner {
+            position: relative;
+            padding-top: 85px;
+        }
         &__top {
-            padding: 25px 40px;
-            min-height: 300px;
+            padding: 28px 22px;
+            min-height: 430px;
+            border-radius: 15px;
         }
         &__title {
-            font-size: 25px;
+            font-size: 27px;
+            position: absolute;
+            left: 15px;
+            width: 100%;
+            top: 10px;
         }
         &__desc {
-            font-size: 16px;
+            font-size: 14px;
+            margin-top: 0;
+            color: #1D3174;
+            font-weight: 500;
+        }
+        &__items {
+            margin-top: 32px;
         }
         &__item {
-            &-title {
-                font-size: 22px;
-            }
+            padding: 33px 20px;
             &-desc {
                 font-size: 14px;
+                margin-top: 24px;
             }
         }
     }
@@ -131,19 +145,6 @@
     .eko {
         &__items {
             grid-template-columns: 1fr;
-        }
-        &__top {
-            padding: 25px;
-        }
-        &__item {
-            padding: 25px;
-        }
-        &__title {
-            font-size: 20px;
-        }
-        &__desc {
-            font-size: 14px;
-            margin-top: 10px;
         }
     }
 }

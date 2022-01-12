@@ -1,6 +1,6 @@
 footer {
-    margin: 0px auto 0;
-    width: 100%;
+    margin-left: auto;
+    width: calc(100% - 180px);
     background: #2F2F2F;
     padding: 59px 25px 64px 85px;
 }
@@ -339,6 +339,13 @@ footer {
     background-position: -210px -20px;
 }
 
+@media screen and (max-width: 1366px) {
+    footer {
+        width: 100%;
+        padding-left: 210px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     footer {
         padding-top: 40px;
@@ -372,8 +379,8 @@ footer {
 
 @media screen and (max-width: 992px) {
     footer {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -396,5 +403,46 @@ footer {
     }
     .f_pay>li {
         margin: 0 3px;
+    }
+    .fs_list {
+        // padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .f_list>li {
+        margin-bottom: 7px;
+    }
+    .f_list>li>a {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .f_list_2>li {
+        display: block;
+        margin-bottom: 4px;
+    }
+    .f_list_2>li>a {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .f_socials:before {
+        display: none;
+    }
+    .f_pay {
+        float: none;
+        text-align: center;
+    }
+    .f_pay>li {
+        margin: 0;
+    }
+    .fs_list {
+        padding: 0;
+    }
+    .fs_list>li {
+        margin: 0 2px;
+    }
+    .fs_list>li>a {
+        width: 24px;
+        height: 24px;
     }
 }

@@ -1,7 +1,7 @@
 .lungs {
     background: #D8F0B8;
     color: #053A26;
-    padding-top: 93px;
+    padding-top: 80px;
     width: calc(100% - 116px);
     margin-left: auto;
     overflow: hidden;
@@ -29,6 +29,9 @@
             max-width: 555px;
             position: relative;
             z-index: 2;
+        }
+        &-mob {
+            display: none;
         }
     }
     &__title {
@@ -251,10 +254,10 @@
 
 @media screen and (max-width: 992px) {
     .lungs {
-        padding: 30px 0 0;
+        padding: 24px 0 0;
         &__inner {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 }
@@ -262,91 +265,112 @@
 @media screen and (max-width: 768px) {
     .lungs {
         &__title {
-            font-size: 28px;
+            font-size: 30px;
         }
         &__desc {
             font-size: 14px;
+            margin-top: 23px;
         }
         &__top {
-            height: 240px;
+            height: unset;
+            img {
+                top: -30px;
+            }
+            &-dekstop {
+                display: none;
+            }
+            &-mob {
+                display: unset;
+            }
         }
         &__first {
-            margin-top: 15px;
+            margin-top: 35px;
+            align-items: flex-end;
+            &-right {
+                padding-bottom: 20px;
+            }
             &-title {
-                font-size: 25px;
+                font-size: 18px;
             }
             &-num {
-                font-size: 250px;
+                font-size: 160px;
                 left: -50px;
+                top: unset;
+                bottom: 25px;
             }
             &-link {
-                font-size: 14px;
+                font-size: 12px;
+                margin-top: 28px;
+                span {
+                    display: none;
+                }
             }
             &-img {
-                width: 200px;
+                width: 145px;
+                flex-shrink: 0;
+                margin-left: -15px;
             }
         }
         &__second {
             margin-top: 15px;
+            padding: 14px 18px;
+            background-image: url(../img/air4.png);
+            background-size: 100% auto;
+            background-position: left bottom;
+            min-height: 380px;
+            position: relative;
+            overflow: unset;
+            &-left {
+                position: static;
+            }
             &-title {
-                font-size: 25px;
+                font-size: 18px;
             }
             &-link {
                 font-size: 14px;
+                position: absolute;
+                top: 100%;
+                margin-top: 20px;
+                left: 0;
+                span {
+                    display: none;
+                }
             }
             &-num {
-                font-size: 250px;
-                left: -25px;
-                bottom: -30px;
+                font-size: 110px;
+                left: -16px;
+                bottom: unset;
+                top: -20px;
             }
         }
         &__third {
+            flex-wrap: wrap;
+            margin-top: 80px;
             &-desc {
                 font-size: 18px;
+                width: 100%;
+                order: -1;
             }
             &-img {
                 width: 300px;
-                margin-left: -20px;
+                margin: 0 auto;
             }
             &-num {
-                font-size: 340px;
+                font-size: 380px;
+                bottom: 80px;
+                left: unset;
+                top: unset;
+                right: -40px;
+                transform: translate(0, 0);
             }
         }
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 500px) {
     .lungs {
-        &__first {
-            display: block;
-            text-align: center;
-            &-img {
-                margin: 0 auto;
-            }
-            &-num {
-                top: -250px;
-            }
-        }
         &__second {
-            background-image: none;
-            padding: 40px 25px;
-        }
-        &__third {
-            padding-bottom: 30px;
-            display: block;
-            &-img {
-                margin: 0 auto;
-            }
-            &-desc {
-                margin: 20px auto 0;
-                font-size: 14px;
-                text-align: center;
-            }
-            &-num {
-                left: 20px;
-                transform: translateX(0%);
-                font-size: 250px;
-            }
+            min-height: 190px;
         }
     }
 }

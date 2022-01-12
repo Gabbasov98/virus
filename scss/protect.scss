@@ -1,23 +1,30 @@
 .protect {
-    margin-top: -15px;
+    padding: 60px 0;
     width: 100%;
     .container {
         width: 100%;
     }
     &__inner {
-        padding-left: 260px;
+        padding-left: 264px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     &__left {
-        max-width: 540px;
+        max-width: 535px;
         margin-right: 82px;
-        padding: 110px 0;
+        // padding: 110px 0;
     }
     &__img {
-        flex-grow: 1;
+        // flex-grow: 1;
+        margin-left: auto;
+        &-mob {
+            display: none;
+        }
         img {
-            width: 100%;
+            // width: 100%;
+            width: auto;
+            height: 630px;
         }
     }
     &__title {
@@ -84,30 +91,62 @@
 
 @media screen and (max-width: 1200px) {
     .protect {
+        padding: 25px 0;
         &__left {
             max-width: 100%;
             margin-right: 0;
+            padding: 0;
         }
         &__img {
-            display: none;
+            margin-left: 20px;
+            img {
+                height: 450px;
+            }
         }
     }
 }
 
 @media screen and (max-width: 992px) {
     .protect {
+        padding: 25px 0 40px;
+        background: #FAFAFA;
         &__inner {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: block;
+            position: relative;
+            padding-bottom: 190px;
         }
-        &__left {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 30px 0;
+        &__img {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 15px;
+            img {
+                height: unset;
+                width: 100%;
+                border-radius: 10px;
+            }
+            &-dekstop {
+                display: none;
+            }
+            &-mob {
+                display: block;
+            }
         }
         &__form {
-            gap: 15px;
-            margin-top: 25px;
+            gap: 10px;
+            margin-top: 0px;
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            width: calc(100% - 30px);
+            input {
+                border-radius: 8px;
+            }
+            &-btn {
+                max-width: 210px;
+                border-radius: 8px;
+            }
         }
     }
 }
@@ -115,10 +154,14 @@
 @media screen and (max-width: 768px) {
     .protect {
         &__title {
-            font-size: 25px;
+            font-size: 30px;
         }
         &__desc {
-            font-size: 16px;
+            font-size: 14px;
+            margin-top: 11px;
+            br {
+                display: none;
+            }
         }
     }
 }

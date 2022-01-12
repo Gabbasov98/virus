@@ -1,5 +1,5 @@
 .catalog {
-    padding: 90px 0;
+    padding: 76px 0;
     &__inner {
         padding-left: 130px;
     }
@@ -86,24 +86,42 @@
 @media screen and (max-width: 992px) {
     .catalog {
         &__inner {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
     .catalog {
+        padding-bottom: 110px;
+        &__items {
+            gap: 12px;
+        }
         &__item {
-            padding-top: 23px;
+            padding-top: 25px 23px 12px;
             &-title {
-                font-size: 20px;
+                font-size: 16px;
             }
             &-desc {
                 font-size: 12px;
+                margin-top: 3px;
+            }
+            &-prices {
+                margin-top: 3px;
+                &-new {
+                    font-size: 13px;
+                }
+                &-old {
+                    font-size: 8px;
+                }
+            }
+            &-link {
+                margin-top: 5px;
+                font-size: 10px;
             }
             &-img {
-                height: 240px;
+                height: 170px;
             }
         }
     }

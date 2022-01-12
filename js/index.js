@@ -1,5 +1,6 @@
 function sliderCatalog() {
     var swiper = new Swiper('.slider .swiper-container', {
+        autoplay: true,
         scrollbar: {
             el: '.slider .swiper-scrollbar',
             draggable: true,
@@ -34,11 +35,17 @@ function sliderEffect1() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 1.5,
                 spaceBetween: 20
             },
-            600: {
+            420: {
                 slidesPerView: 2,
+            },
+            550: {
+                slidesPerView: 2.5,
+            },
+            600: {
+                slidesPerView: 3,
             },
             768: {
                 slidesPerView: 1.5,
@@ -68,12 +75,20 @@ function sliderEffect2() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20
             },
-            480: {
+            600: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 1.5,
+            },
+            1200: {
+                slidesPerView: 2,
+            },
+            1366: {
                 slidesPerView: 2.5,
-                spaceBetween: 20
             },
         }
     })
@@ -94,12 +109,20 @@ function sliderEffect3() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20
             },
-            480: {
+            600: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 1.5,
+            },
+            1200: {
+                slidesPerView: 2,
+            },
+            1366: {
                 slidesPerView: 2.5,
-                spaceBetween: 20
             },
         }
     })
@@ -120,12 +143,20 @@ function sliderEffect4() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20
             },
-            480: {
+            600: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 1.5,
+            },
+            1200: {
+                slidesPerView: 2,
+            },
+            1366: {
                 slidesPerView: 2.5,
-                spaceBetween: 20
             },
         }
     })
@@ -146,12 +177,20 @@ function sliderEffect5() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20
             },
-            480: {
+            600: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 1.5,
+            },
+            1200: {
+                slidesPerView: 2,
+            },
+            1366: {
                 slidesPerView: 2.5,
-                spaceBetween: 20
             },
         }
     })
@@ -166,7 +205,6 @@ function sliderEffect5() {
 
 $(document).ready(function() {
     sliderCatalog()
-    sliderSystem()
     sliderEffect1()
     sliderEffect2()
     sliderEffect3()
@@ -196,34 +234,23 @@ $(document).ready(function() {
         sliderEffect5()
     })
 
-    $(".menu-mob").click(function() {
-        $(this).toggleClass("menu-mob--active")
-        $(".menu").toggleClass("menu--active")
+
+    $(".header__burger").click(function() {
+        $(this).toggleClass("header__burger--active")
         $("body").toggleClass("fixed-body")
+        $(".menu").toggleClass("menu--active")
+
     })
 
     $(".menu__item").click(function() {
         if (window.innerWidth < 992) {
-            $(this).removeClass("menu-mob--active")
+            $(".header__burger").removeClass("header__burger--active")
             $(".menu").removeClass("menu--active")
             $("body").removeClass("fixed-body")
         }
 
     })
 
-    // $(".menu").on("click", "a", function(event) {
-    //     // исключаем стандартную реакцию браузера
-    //     event.preventDefault();
-
-    //     // получем идентификатор блока из атрибута href
-    //     var idc = $(this).attr('href'),
-
-    //         // находим высоту, на которой расположен блок
-    //         top = $(idc).offset().top;
-
-    //     // анимируем переход к блоку, время: 800 мс
-    //     $('body,html').animate({ scrollTop: top }, 100);
-    // });
     $(window).scroll(function() {
         var $sections = $('section');
         $sections.each(function(i, el) {
@@ -241,38 +268,8 @@ $(document).ready(function() {
 
 
 
-    $(".header__burger").click(function() {
-        $(this).toggleClass("header__burger--active")
-        $(".header").toggleClass("header--active")
-        $(".nav").toggleClass("nav--active")
-        $("body").toggleClass("fixed-body")
-
-    })
-
-    $(".blog__btn").click(function() {
-        $(this).toggleClass("blog__btn--active")
-        $(".blog__hidden").slideToggle()
-    })
 
 
 
-    $(".catalog-scheme__tab").click(function() {
-        let path = $(this).attr("data-tab-path")
-        $(".catalog-scheme__tab").removeClass('catalog-scheme__tab--active')
-        $(this).addClass('catalog-scheme__tab--active')
-        console.log(path)
-        $(".catalog-scheme__content").removeClass("catalog-scheme__content--active")
-        $(`.catalog-scheme__content[data-tab-content="${path}"]`).addClass("catalog-scheme__content--active")
-        gallery2()
-        gallery3()
-    })
 
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 150) {
-            $(".header").addClass("header--active")
-        } else {
-            $(".header").removeClass("header--active")
-        }
-    });
 })

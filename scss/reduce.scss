@@ -1,12 +1,12 @@
 .reduce {
-    padding: 60px 0;
+    padding: 83px 0 90px;
     overflow: hidden;
     font-family: $rubic;
     &__inner {
         padding-left: 130px;
     }
     &__title {
-        font-size: 50px;
+        font-size: 44px;
         line-height: 125%;
         font-weight: 400;
         color: #010000;
@@ -20,7 +20,7 @@
         margin-top: 45px;
         background: #ECFCFF;
         opacity: 0.99;
-        padding: 58px 76px 38px;
+        padding: 34px 50px;
         position: relative;
         &-top {
             display: flex;
@@ -111,60 +111,47 @@
 @media screen and (max-width: 992px) {
     .reduce {
         &__inner {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
     .reduce {
+        padding: 25px 0;
         &__title {
-            font-size: 28px;
+            font-size: 20px;
+            padding: 0;
         }
         &__info {
-            min-height: 180px;
+            min-height: 185px;
             padding-right: 180px;
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            margin-top: 25px;
+            padding: 50px 90px 25px 23px;
             &-girl {
-                width: 180px;
+                width: auto;
+                height: 270px;
+                right: -50px;
             }
             &-top {
-                align-items: center;
+                display: block;
                 img {
-                    margin-top: 0;
-                    margin-right: 15px;
-                    width: 35px;
-                    height: 35px;
+                    display: none;
                 }
             }
             &-title {
                 font-size: 14px;
             }
             &-hint {
-                margin-top: 15px;
-                font-size: 12px;
-            }
-        }
-        &__hint {
-            font-size: 14px;
-        }
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .reduce {
-        &__title {
-            padding-right: 0;
-            font-size: 24px;
-        }
-        &__info {
-            padding: 25px;
-            margin-top: 25px;
-            &-girl {
                 display: none;
             }
         }
         &__hint {
+            font-size: 14px;
+            margin-top: 25px;
             br {
                 display: none;
             }

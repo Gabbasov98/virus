@@ -1,7 +1,7 @@
 .qa {
     width: 100%;
     background: linear-gradient(0deg, #D3EFFF, #D3EFFF);
-    padding: 95px 0 105px;
+    padding: 95px 0 135px;
     &__title {
         font-weight: bold;
         font-size: 50px;
@@ -11,7 +11,7 @@
         padding-left: 260px;
     }
     &__items {
-        margin-top: 50px;
+        margin-top: 20px;
     }
     &__item {
         position: relative;
@@ -51,7 +51,7 @@
         }
         &-title {
             font-weight: 500;
-            font-size: 24px;
+            font-size: 22px;
             line-height: 155%;
             color: rgba(39, 39, 39, 0.7);
         }
@@ -122,20 +122,30 @@
 
 @media screen and (max-width:768px) {
     .qa {
+        padding: 28px 0 0;
         &__title {
-            font-size: 28px;
-            br {
-                display: none;
-            }
+            font-size: 27px;
         }
         &__items {
             margin-top: 15px;
         }
         &__item {
             padding: 15px 20px;
-            &-title,
-            &-hidden {
+            &:last-child {
+                &:before {
+                    display: none;
+                }
+            }
+            &-title {
                 font-size: 14px;
+            }
+            &-show {
+                svg {
+                    width: 15px;
+                }
+            }
+            &-hidden {
+                font-size: 12px;
             }
         }
     }
