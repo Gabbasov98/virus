@@ -227,11 +227,11 @@ $(document).ready(function() {
         $(`.effect__slider-content[data-tab-content="${path}"]`).addClass("effect__slider-content--active")
         $(".effect__slider-nav").removeClass("effect__slider-nav--active")
         $(`.effect__slider-nav[data-nav-path="${path}"]`).addClass("effect__slider-nav--active")
-        sliderEffect1()
-        sliderEffect2()
-        sliderEffect3()
-        sliderEffect4()
-        sliderEffect5()
+            // sliderEffect1()
+            // sliderEffect2()
+            // sliderEffect3()
+            // sliderEffect4()
+            // sliderEffect5()
     })
 
 

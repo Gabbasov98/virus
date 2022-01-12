@@ -83,10 +83,16 @@
         margin-left: 40px;
         width: calc(100% - 400px);
         padding-bottom: 55px;
+        position: relative;
+        background: #F3F5F8;
         &-content {
-            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: -1;
             &--active {
-                display: block;
+                position: static;
             }
         }
         &-item {
@@ -166,9 +172,12 @@
         &-nav {
             align-items: center;
             flex-shrink: 0;
-            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
             &--active {
-                display: flex;
+                position: static;
             }
         }
         &-buttons {
