@@ -2,8 +2,8 @@
     background: #D8F0B8;
     color: #053A26;
     padding-top: 93px;
-    width: 1250px;
-    margin: 0 auto;
+    width: calc(100% - 116px);
+    margin-left: auto;
     overflow: hidden;
     .container {
         width: 100%;
@@ -77,6 +77,7 @@
             display: block;
         }
         &-num {
+            pointer-events: none;
             position: absolute;
             font-weight: 800;
             font-size: 400px;
@@ -99,6 +100,7 @@
         overflow: hidden;
         margin-top: 70px;
         &-num {
+            pointer-events: none;
             font-weight: 800;
             font-size: 400px;
             line-height: 100%;
@@ -162,6 +164,7 @@
             }
         }
         &-num {
+            pointer-events: none;
             position: absolute;
             top: 0;
             left: 50%;
@@ -170,6 +173,180 @@
             font-size: 701.299px;
             color: #C4DCA4;
             opacity: 0.5;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .lungs {
+        width: 100%;
+        &__inner {
+            padding-left: 210px;
+        }
+        .container {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .lungs {
+        &__title {
+            font-size: 40px;
+        }
+        &__top {
+            height: 320px;
+            &-left {
+                max-width: 500px;
+            }
+        }
+        &__desc {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        &__first {
+            margin-top: 30px;
+            &-title {
+                font-size: 37px;
+            }
+            &-img {
+                margin-right: 50px;
+            }
+            &-num {
+                font-size: 300px;
+                left: -80px;
+            }
+            &-link {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+        }
+        &__second {
+            padding: 70px;
+            margin-top: 30px;
+            &-title {
+                font-size: 37px;
+            }
+            &-link {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+            &-num {
+                font-size: 300px;
+            }
+        }
+        &__third {
+            &-desc {
+                font-size: 20px;
+            }
+            &-img {
+                width: 400px;
+            }
+            &-num {
+                font-size: 500px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .lungs {
+        padding: 30px 0 0;
+        &__inner {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lungs {
+        &__title {
+            font-size: 28px;
+        }
+        &__desc {
+            font-size: 14px;
+        }
+        &__top {
+            height: 240px;
+        }
+        &__first {
+            margin-top: 15px;
+            &-title {
+                font-size: 25px;
+            }
+            &-num {
+                font-size: 250px;
+                left: -50px;
+            }
+            &-link {
+                font-size: 14px;
+            }
+            &-img {
+                width: 200px;
+            }
+        }
+        &__second {
+            margin-top: 15px;
+            &-title {
+                font-size: 25px;
+            }
+            &-link {
+                font-size: 14px;
+            }
+            &-num {
+                font-size: 250px;
+                left: -25px;
+                bottom: -30px;
+            }
+        }
+        &__third {
+            &-desc {
+                font-size: 18px;
+            }
+            &-img {
+                width: 300px;
+                margin-left: -20px;
+            }
+            &-num {
+                font-size: 340px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .lungs {
+        &__first {
+            display: block;
+            text-align: center;
+            &-img {
+                margin: 0 auto;
+            }
+            &-num {
+                top: -250px;
+            }
+        }
+        &__second {
+            background-image: none;
+            padding: 40px 25px;
+        }
+        &__third {
+            padding-bottom: 30px;
+            display: block;
+            &-img {
+                margin: 0 auto;
+            }
+            &-desc {
+                margin: 20px auto 0;
+                font-size: 14px;
+                text-align: center;
+            }
+            &-num {
+                left: 20px;
+                transform: translateX(0%);
+                font-size: 250px;
+            }
         }
     }
 }

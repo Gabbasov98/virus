@@ -22,6 +22,8 @@ html {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    width: 1366px;
+    margin: 0 auto;
 }
 
 .content {
@@ -30,12 +32,24 @@ html {
     flex-direction: column;
 }
 
+.container {
+    padding: 0;
+    margin-right: 0;
+}
+
 @media (min-width: 1300px) {
     .container {
         width: 1280px;
     }
 }
 
-.container {
-    padding: 0;
+@media screen and (max-width: 1366px) {
+    .wrapper {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
 }
+
+@media screen and (max-width: 992px) {}

@@ -1,10 +1,6 @@
 .protect {
     margin-top: -15px;
-    width: 1366px;
-    margin: 0 auto;
-    &--bg {
-        background: linear-gradient(0deg, #F3F5F8, #F3F5F8);
-    }
+    width: 100%;
     .container {
         width: 100%;
     }
@@ -63,6 +59,66 @@
             font-size: 15px;
             line-height: 180%;
             border-radius: 12.0736px;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .protect {
+        &__inner {
+            padding-left: 210px;
+        }
+        &__left {
+            max-width: 400px;
+            margin-right: 30px;
+            padding: 80px 0;
+        }
+        &__form {
+            grid-template-columns: 1fr;
+        }
+        &__title {
+            font-size: 37px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .protect {
+        &__left {
+            max-width: 100%;
+            margin-right: 0;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .protect {
+        &__inner {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__left {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+        &__form {
+            gap: 15px;
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .protect {
+        &__title {
+            font-size: 25px;
+        }
+        &__desc {
+            font-size: 16px;
         }
     }
 }

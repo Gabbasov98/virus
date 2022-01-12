@@ -1,6 +1,6 @@
 footer {
     margin: 0px auto 0;
-    width: 1366px;
+    width: 100%;
     background: #2F2F2F;
     padding: 59px 25px 64px 85px;
 }
@@ -36,9 +36,14 @@ footer {
     display: none;
 }
 
+.f_cols {
+    display: flex;
+    justify-content: space-between;
+}
+
 .f_col {
     width: 20%;
-    float: left;
+    // float: left;
     padding-right: 15px;
 }
 
@@ -101,6 +106,9 @@ footer {
     font: 15px/25px "Montserrat", Arial, sans-serif;
     line-height: 1.428571429;
     margin-bottom: 10px;
+    &:hover {
+        color: #fff;
+    }
 }
 
 .f_sign:hover {
@@ -130,6 +138,9 @@ footer {
     padding-left: 20px;
     position: relative;
     font: 15px/25px "Montserrat", Arial, sans-serif;
+    &:hover {
+        color: #fff;
+    }
 }
 
 .f_tel {
@@ -236,7 +247,7 @@ footer {
     display: block;
     width: 14px;
     height: 14px;
-    background: url(../img/socials_pay_sprite.png) 0 0 no-repeat;
+    background: url(https://breeeth.com/bitrix/templates/iqair_new/images/socials_pay_sprite.png) 0 0 no-repeat;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -297,6 +308,7 @@ footer {
     width: 30px;
     height: 20px;
     background: url(../img/socials_pay_sprite.png) 0 -20px no-repeat;
+    background-size: 236px auto;
 }
 
 .f_pay>li:nth-child(2)>span {
@@ -325,4 +337,64 @@ footer {
 
 .f_pay>li:nth-child(8)>span {
     background-position: -210px -20px;
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    .f_cols {
+        flex-wrap: wrap;
+    }
+    .f_col {
+        width: 25%;
+    }
+    .f_col:nth-child(5) {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .f_col:nth-child(5) br {
+        display: none;
+    }
+    .f_sign {
+        text-align: left;
+        margin: 0 auto 25px;
+    }
+    .fc_item {
+        margin: 0 5px 10px;
+    }
+    .f_socials {
+        margin: 15px 0 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .f_col {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        width: 48%;
+    }
+    .f_copy {
+        float: none;
+        text-align: center;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .f_pay {
+        float: none;
+        text-align: center;
+    }
+    .f_pay>li {
+        margin: 0 3px;
+    }
 }

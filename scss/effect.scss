@@ -1,6 +1,6 @@
 .effect {
-    margin: 70px auto 0;
-    width: 1366px;
+    margin: 70px 0 0;
+    width: 100%;
     background: #F3F5F8;
     backdrop-filter: blur(71.634px);
     padding-top: 60px;
@@ -46,6 +46,11 @@
         color: #5C6077;
         font-family: $rubic;
         border-radius: 11.0381px;
+        transition: all .3s;
+        &:hover {
+            background: #FFFFFF;
+            cursor: pointer;
+        }
         &:not(:last-child) {
             margin-bottom: 12px;
         }
@@ -58,6 +63,18 @@
             align-items: center;
             justify-content: center;
             margin-right: 25px;
+            transition: all .3s;
+        }
+        &--active {
+            background: #FFFFFF;
+            pointer-events: none;
+            border: 0.498264px solid rgba(56, 78, 112, 0.12);
+            i {
+                background: #233E99;
+            }
+            path {
+                fill: #fff;
+            }
         }
     }
     &__slider {
@@ -65,6 +82,12 @@
         margin-left: 40px;
         width: calc(100% - 400px);
         padding-bottom: 55px;
+        &-content {
+            display: none;
+            &--active {
+                display: block;
+            }
+        }
         &-item {
             background: #FFFFFF;
             border: 0.446813px solid rgba(56, 78, 112, 0.12);
@@ -136,9 +159,12 @@
             justify-content: space-between;
         }
         &-nav {
-            display: flex;
             align-items: center;
             flex-shrink: 0;
+            display: none;
+            &--active {
+                display: flex;
+            }
         }
         &-buttons {
             display: flex;
@@ -167,7 +193,7 @@
     }
     .swiper-button-next,
     .swiper-button-prev {
-        opacity: 1;
+        // opacity: 1;
         position: static;
         margin: 0;
         padding: 0 7px;
@@ -177,5 +203,90 @@
     }
     .swiper-button-prev {
         margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .effect {
+        &__inner {
+            padding-left: 210px;
+        }
+        &__title {
+            font-size: 42px;
+        }
+        &__slider {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .effect {
+        &__top {
+            display: block;
+        }
+        &__title {
+            font-size: 37px;
+            margin-bottom: 10px;
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .effect {
+        margin-top: 30px;
+        padding-top: 30px;
+        &__top {
+            padding-right: 0;
+        }
+        &__inner {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .effect {
+        &__title {
+            font-size: 25px;
+        }
+        .swiper-pagination {
+            font-size: 22px;
+        }
+        &__bottom {
+            display: block;
+            margin-top: 20px;
+        }
+        &__slider {
+            margin: 20px 0 0;
+            width: 100%;
+        }
+        &__items {
+            height: unset;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            width: 100%;
+            padding: 0;
+        }
+        &__item {
+            margin: 0 !important;
+        }
+        &__slider {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .effect {
+        &__items {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
     }
 }

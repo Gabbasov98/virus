@@ -1,7 +1,6 @@
 .system {
     color: rgba(#272727, 0.9);
-    width: 1366px;
-    margin: 0 auto;
+    width: 100%;
     .container {
         width: 100%;
     }
@@ -104,6 +103,103 @@
         }
         span {
             max-width: 312px;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .system {
+        &__inner {
+            padding-left: 210px;
+            display: block;
+        }
+        &__slider {
+            width: 100%;
+            margin-top: 15px;
+        }
+        &__items {
+            margin-top: 25px;
+        }
+        &__left {
+            margin-right: 0;
+        }
+        &__item {
+            align-items: center;
+            span {
+                max-width: unset;
+            }
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .system {
+        &__inner {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .system {
+        &__logo {
+            width: 200px;
+        }
+        &__title {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        &__item {
+            font-size: 14px;
+            &-icon {
+                margin-right: 15px;
+                margin-top: 0;
+            }
+        }
+        &__slider {
+            &-desc {
+                font-size: 16px;
+                padding: 25px 25px 55px;
+            }
+        }
+        .swiper-pagination {
+            left: 25px;
+            bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .system {
+        &__title {
+            font-size: 18px;
+        }
+        &__item {
+            &-icon {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .system {
+        &__item {
+            display: block;
+            text-align: center;
+            &-icon {
+                margin: 0 auto 10px;
+            }
+        }
+        &__slider {
+            &-desc {
+                font-size: 14px;
+            }
         }
     }
 }
