@@ -75,11 +75,17 @@ function sliderEffect2() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 1.5,
                 spaceBetween: 20
             },
-            600: {
+            420: {
                 slidesPerView: 2,
+            },
+            550: {
+                slidesPerView: 2.5,
+            },
+            600: {
+                slidesPerView: 3,
             },
             768: {
                 slidesPerView: 1.5,
@@ -109,11 +115,17 @@ function sliderEffect3() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 1.5,
                 spaceBetween: 20
             },
-            600: {
+            420: {
                 slidesPerView: 2,
+            },
+            550: {
+                slidesPerView: 2.5,
+            },
+            600: {
+                slidesPerView: 3,
             },
             768: {
                 slidesPerView: 1.5,
@@ -143,11 +155,17 @@ function sliderEffect4() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 1.5,
                 spaceBetween: 20
             },
-            600: {
+            420: {
                 slidesPerView: 2,
+            },
+            550: {
+                slidesPerView: 2.5,
+            },
+            600: {
+                slidesPerView: 3,
             },
             768: {
                 slidesPerView: 1.5,
@@ -177,11 +195,17 @@ function sliderEffect5() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 1.5,
                 spaceBetween: 20
             },
-            600: {
+            420: {
                 slidesPerView: 2,
+            },
+            550: {
+                slidesPerView: 2.5,
+            },
+            600: {
+                slidesPerView: 3,
             },
             768: {
                 slidesPerView: 1.5,
