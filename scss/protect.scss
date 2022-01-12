@@ -1,6 +1,13 @@
 .protect {
     padding: 60px 0;
     width: 100%;
+    &--bg {
+        padding: 0;
+        background: linear-gradient(0deg, #F3F5F8, #F3F5F8);
+        .protect__form-group input {
+            background: #FFFFFF;
+        }
+    }
     .container {
         width: 100%;
     }

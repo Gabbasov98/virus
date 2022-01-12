@@ -10,7 +10,7 @@
     }
     &__item {
         background: linear-gradient(0deg, #F5F5F7, #F5F5F7);
-        padding: 50px 23px 23px;
+        padding: 50px 23px 0px;
         text-align: center;
         &-title {
             font-weight: 500;
@@ -99,7 +99,7 @@
             gap: 12px;
         }
         &__item {
-            padding-top: 25px 23px 12px;
+            padding-top: 25px 23px 0px;
             &-title {
                 font-size: 16px;
             }

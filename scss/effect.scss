@@ -96,7 +96,7 @@
             border-radius: 9.89827px;
             padding: 25px 33px;
             height: 420px;
-            transition: all .1s;
+            transition: all 0s;
             &:hover {
                 background: #233E99;
                 border: 0.446813px solid rgba(56, 78, 112, 0.12);
@@ -128,6 +128,7 @@
             color: #18214D;
             margin-top: 20px;
             font-family: $rubic;
+            transition: all 0s;
         }
         &-desc {
             font-size: 12px;
@@ -135,6 +136,7 @@
             color: #5C6077;
             margin-top: 15px;
             padding-right: 20px;
+            transition: all 0s;
         }
         &-price {
             &-old {
@@ -144,6 +146,7 @@
                 color: #5C6077;
                 margin-top: 28px;
                 font-family: $rubic;
+                transition: all 0s;
             }
             &-new {
                 font-weight: 500;
@@ -151,6 +154,7 @@
                 line-height: 130%;
                 color: #233E99;
                 font-family: $rubic;
+                transition: all 0s;
             }
         }
         &-bottom {
@@ -327,8 +331,12 @@
             }
             &--active {
                 color: #fff;
-                background: #233E99;
+                background: #233E99 !important;
                 opacity: 1;
+                border-color: transparent;
+                path {
+                    fill: unset;
+                }
             }
         }
     }

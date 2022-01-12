@@ -110,6 +110,12 @@
         overflow-y: auto;
         overflow-x: hidden;
         margin-bottom: 50px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
     &__btn {
         flex-shrink: 0;

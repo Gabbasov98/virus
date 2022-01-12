@@ -2,7 +2,6 @@
     padding-top: 35px;
     &__top {
         display: flex;
-        justify-content: space-between;
     }
     &__title {
         max-width: 360px;
@@ -11,7 +10,8 @@
         line-height: 120%;
         color: #1D3174;
         font-family: $rubic;
-        margin-left: 130px;
+        margin-left: 178px;
+        margin-right: 105px;
     }
     &__desc {
         max-width: 435px;
@@ -78,6 +78,9 @@
     &__slide1 {
         .slider__slide-left {
             align-items: flex-end;
+            img {
+                max-width: 430px;
+            }
         }
     }
     &__items {
@@ -156,6 +159,7 @@
             font-size: 37px;
             max-width: 100%;
             margin-left: 0;
+            margin-right: 0;
         }
         &__desc {
             font-size: 18px;
